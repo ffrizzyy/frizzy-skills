@@ -1,6 +1,6 @@
 ---
 name: project-frizzy
-description: Plans any software project into a complete PRD.md, lean by default. Covers web, SaaS, mobile, desktop, CLI, extensions, games, APIs, bots, and AI features, and coordinates the design, stack, security, test, and ship skills. Use for /project-frizzy, or any ask to plan, scope, spec, or kick off a product, or for a PRD, roadmap, or product spec, even if they never say PRD.
+description: Plans any software project into a complete PRD.md and coordinates the design, stack, security, test, and ship skills, so one document covers every section. Handles design systems and tokens, tech stack with costs and free-tier limits, data models and APIs, security, privacy, and compliance (GDPR, consent, age ratings), test plans and QA, and deployment, CI/CD, and store launch. Covers web, SaaS, mobile, desktop, CLI, extensions, games, APIs, bots, and AI features. Use for /project-frizzy, or any ask to plan, scope, spec, or kick off a product, write a PRD, roadmap, or product spec, or produce any of those sections, even if they never say PRD. A full mode exists on request.
 ---
 
 # project-frizzy
