@@ -1,6 +1,6 @@
 ---
 name: frizzy-design
-description: Design direction and a swappable design system for any software project. Tokens with real values and computed WCAG contrast ratios, typography, icons, a motion map with reduced-motion fallbacks, style flavors (neon, kinetic type, Y2K, brutalist, pixel art, glass, blueprint and more), a component list, an accessibility floor, and a protocol for changing the look from a new reference. Use this whenever the user asks for a design system, style guide, design tokens, color palette, font pairing, animation or motion plan, "make it look like these screenshots or links", a restyle or redesign, or section 8 of a project-frizzy PRD, even if they never say "design system".
+description: Design direction and a swappable design system for any project: tokens with real values and WCAG contrast, typography, icons, motion map, style flavors, components, accessibility, and a restyle protocol. Use for a design system, palette, font pairing, motion plan, restyle, "make it look like these screenshots", or section 8 of a PRD, even if they never say design system.
 ---
 
 # frizzy-design
@@ -43,9 +43,9 @@ A new reference or a new vibe edits section 8, the screen notes in section 7, an
 
 ## Facts
 
-`references/facts.md` holds dated facts about GSAP, React Bits, and the two design skills. Stable rows are reusable for 60 days after the checked date. Cite the checked date in the PRD.
+`references/facts.md` holds dated facts about GSAP, React Bits, and the two design skills; the reuse rules are at the top. Cite the checked date in the PRD.
 
-Writing rules for any text this skill produces for a PRD: sentence case headings, no emoji, no horizontal rules, no em or en dashes (write ranges with "to"), no bold labels on list items, no "not just X but Y" or "it is not X, it is Y", no staged openers or one-line closers, none of crucial, pivotal, seamless, leverage, robust, vibrant, showcase, delve, cutting-edge, holistic, empower. Name specifics instead of adjectives, decision before reasoning, straight quotes. No placeholders: unknowns become open questions with an owner and a date.
+Writing rules: one title, sentence case headings, no emoji or horizontal rules, no em or en dashes (write ranges with "to"), no bold labels on list items, no "not just X but Y", no staged openers, and none of crucial, pivotal, seamless, leverage, robust, vibrant, showcase, delve, cutting-edge, holistic, empower. Name specifics, decision before reasoning, straight quotes. No placeholders: unknowns become open questions with an owner and a date.
 
 ## Reference map
 

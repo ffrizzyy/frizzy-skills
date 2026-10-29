@@ -1,13 +1,6 @@
 # Verified facts (reuse rules inside)
 
-Purpose: lean mode skips searches for facts verified recently. Every row has the date it was checked, which is the date to write in the PRD ("checked 2026-10-24"), never today's date.
-
-Reuse rules
-- Stable rows (standards, fees, rules) may be reused for 60 days after the checked date without searching. After that, re-verify with one search and update this file.
-- Volatile rows (prices, free-tier limits) must be re-verified by search whenever the service is actually chosen for the PRD, unless it was checked within the last 14 days.
-- Rows marked "unverified" must be searched or labeled as unverified in the PRD.
-- A project that touches a region, store, or tool not listed here needs its own search.
-- Source names are for the PRD's research appendix. Paraphrase, never quote.
+Every row carries its checked date; cite that date in the PRD, never today's. Stable rows (standards, fees, rules) are reusable for 60 days. Volatile rows (prices, limits) are re-verified by search unless checked within 14 days. Unverified rows get searched or labeled unverified. Source names feed the research appendix; paraphrase, never quote.
 
 ## Standards (stable)
 

@@ -1,6 +1,6 @@
 ---
 name: frizzy-ship
-description: Infrastructure, development workflow, deployment, and launch planning for any software project. Environments and backups with recovery targets, observability and alerts, CI/CD pipeline, rollback, launch checklist, first 72 hours, app store and extension store submission steps and fees, and a lean build kit for the coding agent (reuse-first discipline, shorter agent replies, codebase graphs, test-first method) with a setup that fits the project size. Use this whenever the user asks how to deploy, host, or launch something, wants a CI/CD or release plan, a launch checklist, store submission steps, environment or backup planning, how to set up a project for a coding agent, an AGENTS.md, a development workflow, or sections 12, 15, and 16 of a project-frizzy PRD, even if they only say "how do I ship this".
+description: Infrastructure, workflow, deployment, and launch planning for any project: environments, backups, observability, CI/CD, rollback, launch checklist, first 72 hours, store submission, and a lean build kit for coding agents. Use for deploy, host, launch, release, CI/CD, store steps, AGENTS.md, or sections 12, 15, and 16 of a PRD, even if they only say how do I ship this.
 ---
 
 # frizzy-ship
@@ -17,7 +17,7 @@ Owns PRD sections 12 (infrastructure and environments), 15 (development workflow
 1. Read what you need in one call:
    `python3 scripts/section.py references/shipping-by-type.md::"Web apps" references/ecosystem.md::"Choosing the kit" references/section-guide.md::"16"`.
 2. Use the delivery method from the PRD title block. When standalone, choose: Kanban with a work-in-progress limit of 2 for one developer, Scrum for 2 to 8 people with a steady backlog, GDLC for games.
-3. Store and platform fees and rules come from `references/facts.md`. Stable rows are reusable for 60 days after the checked date; the PRD cites that date. Search (standard mode) only for a store or platform not listed or a row older than 60 days.
+3. Store and platform fees and rules come from `references/facts.md` (reuse rules at the top). Search only for a store or platform it does not cover.
 4. Choose the build kit for section 15 with the table in `references/ecosystem.md`: at most four tools, at most two always-on, one build discipline. Ask before installing anything, use official sources only, and record privacy flags and install commands in the PRD.
 5. Write the sections once in final form.
 
@@ -42,7 +42,7 @@ Work one milestone at a time from the PRD roadmap and keep the PRD current. Tell
 - From frizzy-test: the CI stages that run each test layer and the release gates.
 - To project-frizzy: the roadmap tickets for pipeline, launch, and store steps, with feature IDs where they apply.
 
-Writing rules for any text this skill produces for a PRD: sentence case headings, no emoji, no horizontal rules, no em or en dashes (write ranges with "to"), no bold labels on list items, no "not just X but Y" or "it is not X, it is Y", no staged openers or one-line closers, none of crucial, pivotal, seamless, leverage, robust, vibrant, showcase, delve, cutting-edge, holistic, empower. Name specifics instead of adjectives, decision before reasoning, straight quotes. No placeholders: unknowns become open questions with an owner and a date.
+Writing rules: one title, sentence case headings, no emoji or horizontal rules, no em or en dashes (write ranges with "to"), no bold labels on list items, no "not just X but Y", no staged openers, and none of crucial, pivotal, seamless, leverage, robust, vibrant, showcase, delve, cutting-edge, holistic, empower. Name specifics, decision before reasoning, straight quotes. No placeholders: unknowns become open questions with an owner and a date.
 
 ## Reference map
 

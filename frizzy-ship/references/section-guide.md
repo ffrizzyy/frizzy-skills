@@ -1,6 +1,6 @@
 # Section guide
 
-Full guidance for the PRD sections this skill owns. Keep the exact section headings so the PRD linter and the owner can navigate. Rules for every PRD section: each section opens with the decision or the answer. Tables for anything comparable. Every sourced figure carries "checked YYYY-MM-DD". No placeholders: unknowns become open questions with an owner and a date. Stable IDs: goals G-1, features F-001, screens S-01, endpoints E-01, risks R-1, open questions OQ-1, decisions D-01. Sentence case headings, no emoji, no horizontal rules, no em or en dashes.
+Full guidance for the PRD sections this skill owns. Keep the exact headings. Each section opens with the decision; tables for anything comparable; sourced figures carry "checked YYYY-MM-DD"; no placeholders; stable IDs (G-1, F-001, S-01, E-01, R-1, OQ-1, D-01); sentence case headings.
 
 ### 12. Infrastructure and environments
 Hosting topology diagram or table, an environment matrix (URL, data, secrets, who can deploy), domains and DNS, email authentication records, CDN and caching, scaling approach and the thresholds that trigger it, backups with stated RPO and RTO, disaster recovery steps, infrastructure as code choice, observability (logs, metrics, traces, uptime checks, alerts, status page), and the cost guardrails from the frizzy-stack skill.

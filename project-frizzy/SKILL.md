@@ -1,6 +1,6 @@
 ---
 name: project-frizzy
-description: Research and plan any software project from idea to a complete PRD.md, lean by default so it uses few tokens and tool calls. This is the PRD skill and the coordinator of the frizzy field skills (design, stack, security, test, ship). Covers web apps, SaaS, mobile apps, desktop and CLI tools, browser extensions, games, APIs, bots, AI features, and combinations. Picks the right lifecycle, scope, users, goals, features, user flows, roadmap, risks, and a milestone plan, and pulls design, stack and costs, security and privacy, testing, and shipping from the field skills. Use this whenever the user types /project-frizzy, or asks to plan, scope, spec, or kick off an app, website, game, extension, tool, or product, or asks for a PRD, product spec, project roadmap, or "how should I build this", even if they never say PRD or planning. A full, detailed mode exists for people who ask for it.
+description: Plans any software project into a complete PRD.md, lean by default. Covers web, SaaS, mobile, desktop, CLI, extensions, games, APIs, bots, and AI features, and coordinates the design, stack, security, test, and ship skills. Use for /project-frizzy, or any ask to plan, scope, spec, or kick off a product, or for a PRD, roadmap, or product spec, even if they never say PRD.
 ---
 
 # project-frizzy
@@ -22,7 +22,7 @@ This skill owns the PRD itself and the sections about the product. Five field sk
 | frizzy-test | 14 | `TEST-PLAN.md` |
 | frizzy-ship | 12, 15, 16 | `SHIP.md` |
 
-Run `bash scripts/find_suite.sh` once to see which siblings are installed. For each owner the project needs, read its `SKILL.md` (one `cat` of all of them is one call) and apply its workflow, section contract, and handoffs. Skip owners the project does not need (a CLI tool has no design section). This skill stays the single writer of `PRD.md`, so the document has one voice and the build takes the same few tool calls. If a sibling is missing, write its sections from the lean contract in the table below and tell the person which skill to install for more depth.
+Run `bash scripts/find_suite.sh` once to see which siblings are installed. For each owner the project needs, read only that owner's `SKILL.md` (all needed ones in one call) and apply its workflow, section contract, and handoffs. Skip owners the project does not need (a CLI tool has no design section). This skill stays the single writer of `PRD.md`, so the document has one voice and the build takes the same few tool calls. If a sibling is missing, write its sections from the lean contract in the table below and tell the person which skill to install for more depth.
 
 ## Modes
 
@@ -107,7 +107,7 @@ Section list and body caps (lines, tables count per row). Keep these exact headi
 
 Never cut, even in lean mode: security standard names with editions, the legal documents plan and consent design, dated free and ideal costs, rollback, risks with mitigations, real token values, named test tools, and checkable roadmap tickets.
 
-Writing rules, applied while writing with no separate pass: sentence case headings, one title, no emoji, no horizontal rules, no em or en dashes (write ranges with "to"), no bold labels on list items, no "not just X but Y" or "it is not X, it is Y", no staged openers or one-line closers, and none of crucial, pivotal, seamless, leverage, robust, vibrant, showcase, delve, cutting-edge, holistic, empower. Name specifics instead of adjectives, put the decision before the reasoning, use straight quotes. No placeholders: unknowns become open questions with an owner and a date. No full text of any privacy policy, terms, or cookie policy.
+Writing rules: one title, sentence case headings, no emoji or horizontal rules, no em or en dashes (write ranges with "to"), no bold labels on list items, no "not just X but Y", no staged openers, and none of crucial, pivotal, seamless, leverage, robust, vibrant, showcase, delve, cutting-edge, holistic, empower. Name specifics, decision before reasoning, straight quotes. No placeholders: unknowns become open questions with an owner and a date. No full text of any privacy policy, terms, or cookie policy. Full style list: `references/writing-style.md`.
 
 Type notes: games use a game design section instead of features, a save-data model instead of a database, and must check national age-rating rules; extensions include the manifest as JSON and a permission table; AI features follow the order built-in model, bring-your-own-key, free tier after reading data terms, paid hosted tier, and record rejected options; combined projects keep one PRD with a shared core and a subsection per surface.
 

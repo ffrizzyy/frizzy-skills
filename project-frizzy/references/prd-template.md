@@ -2,12 +2,13 @@
 
 Contents
 - Document rules
-- Section order
 - Section guidance
 - Swaps by project type
 - Skeleton to copy
 
 ## Document rules
+
+The section order and headings are the skeleton at the end of this file; the orchestrator's section table gives each section's cap and lean content.
 
 - One file named `PRD.md`. A table of contents follows the title block. Each major section opens with the decision or the answer, then the detail.
 - Two readers. An owner who may not be technical reads the TL;DR, context, users, flows, costs, and risks. A developer or coding agent reads the rest. Use plain words first and define each term once in the glossary.
@@ -18,31 +19,6 @@ Contents
 - Stable IDs for cross-reference: goals G-1, features F-001, screens S-01, tables as their names, endpoints E-01, risks R-1, open questions OQ-1, decisions D-01. Roadmap tickets cite feature IDs.
 - Sentence case headings, one title, no emoji, no horizontal rules, no dashes (see writing-style.md).
 - Depth follows the project. A one-screen utility does not need ten personas. Keep every section, but let a small project answer a section in a paragraph.
-
-## Section order
-
-0. Title block
-1. TL;DR
-2. Context and problem
-3. Users
-4. Goals, metrics, and non-goals
-5. Scope and release plan
-6. Features and requirements
-7. User flows and information architecture
-8. Design system
-9. Architecture and tech stack
-10. Data model
-11. Backend and API
-12. Infrastructure and environments
-13. Security, privacy, and compliance
-14. Testing and quality
-15. Development workflow
-16. Deployment and shipping plan
-17. Analytics, growth, and monetization
-18. Roadmap and milestones
-19. Costs
-20. Risks, open questions, and decisions
-21. Appendices
 
 ## Section guidance
 

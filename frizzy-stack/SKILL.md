@@ -1,6 +1,6 @@
 ---
 name: frizzy-stack
-description: Tech stack, architecture, data model, API, and cost planning for any software project, free first with the ideal option beside it. Decision records with prices, free-tier limits and the trigger to upgrade, starting stacks per project type, database schema with authorization rules, endpoint tables, and one-time, monthly, and scale cost tables. Use this whenever the user asks which tech stack, framework, database, auth, hosting or services to use, how much a project will cost to run, for a database schema, an API design, free-tier limits or alternatives, "what should I build this with", or sections 9, 10, 11, and 19 of a project-frizzy PRD, even if they never say "stack".
+description: Tech stack, architecture, data model, API, and cost planning for any project, free option first with the ideal one beside it. Decision records with prices and free-tier limits, schema with authorization rules, endpoint tables, and cost tables. Use for stack, framework, database, hosting, auth, schema, API, or cost questions, or sections 9, 10, 11, 19 of a PRD, even if they never say stack.
 ---
 
 # frizzy-stack
@@ -24,7 +24,7 @@ Owns PRD sections 9 (architecture and tech stack), 10 (data model), 11 (backend 
 1. Read what you need in one call:
    `python3 scripts/section.py references/stack-and-costs.md::"Candidate services" references/stack-and-costs.md::"Starting stacks" references/stack-and-costs.md::"Free-tier traps" references/stack-by-type.md::"Mobile apps"`.
 2. Decide in this order: architecture shape, stack (free and ideal), data model, API surface, then costs.
-3. Research prices and limits of the two or three services in the free pick, one standard-mode search each. Skip any service whose row in `references/facts.md` was checked within 14 days. Stable rows may be reused for 60 days after their checked date. Volatile rows (prices, limits) are re-verified when the service is chosen.
+3. Research prices and limits of the two or three services in the free pick, one search each. Skip any service whose row in `references/facts.md` was checked within 14 days; the reuse rules are at the top of that file.
 4. Write each decision as a record (pick, ideal, reason, switch trigger, migration effort, rejected options) and keep the full records short in lean mode.
 5. Compute costs with the math visible (for AI features: tokens per request times requests per user per month).
 
@@ -48,7 +48,7 @@ Type notes: games use a save-data model instead of a database and drop the API s
 - To frizzy-test: the authorization matrix and the endpoint list for contract and permission tests.
 - To project-frizzy: the cost headline numbers and any open questions with an owner and a date.
 
-Writing rules for any text this skill produces for a PRD: sentence case headings, no emoji, no horizontal rules, no em or en dashes (write ranges with "to"), no bold labels on list items, no "not just X but Y" or "it is not X, it is Y", no staged openers or one-line closers, none of crucial, pivotal, seamless, leverage, robust, vibrant, showcase, delve, cutting-edge, holistic, empower. Name specifics instead of adjectives, decision before reasoning, straight quotes. No placeholders: unknowns become open questions with an owner and a date.
+Writing rules: one title, sentence case headings, no emoji or horizontal rules, no em or en dashes (write ranges with "to"), no bold labels on list items, no "not just X but Y", no staged openers, and none of crucial, pivotal, seamless, leverage, robust, vibrant, showcase, delve, cutting-edge, holistic, empower. Name specifics, decision before reasoning, straight quotes. No placeholders: unknowns become open questions with an owner and a date.
 
 ## Reference map
 

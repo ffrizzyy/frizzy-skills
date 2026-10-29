@@ -1,6 +1,6 @@
 ---
 name: frizzy-test
-description: Test strategy and quality planning for any software project. Test pyramid with tools and numeric targets, Playwright end-to-end flows, axe accessibility checks, Lighthouse performance checks, contract and load tests for APIs, evaluations for AI features, playtests for games, a beta plan, a definition of done, a bug severity scale, and visual verification with playwright-cli at phone, tablet, and desktop widths. Use this whenever the user asks for a test plan, QA strategy, how to test an app, end-to-end or accessibility testing, what "done" means, a beta or UAT plan, setting up Playwright, or section 14 of a project-frizzy PRD, even if they only say "how do I make sure this works".
+description: Test strategy and quality planning for any project: test layers with tools and numeric targets, Playwright end-to-end flows, accessibility and performance checks, API contract and load tests, AI evaluations, playtests, a beta plan, definition of done, and visual checks from phone to desktop widths. Use for a test plan, QA, accessibility, beta, or section 14 of a PRD, even if they never say test plan.
 ---
 
 # frizzy-test
@@ -43,7 +43,7 @@ Verify visually at 375, 768, 1280, and 1920 pixel widths with playwright-cli whe
 - From frizzy-stack: the endpoint list and authorization matrix.
 - To frizzy-ship: the CI stages that run each layer and the checks that gate a release.
 
-Writing rules for any text this skill produces for a PRD: sentence case headings, no emoji, no horizontal rules, no em or en dashes (write ranges with "to"), no bold labels on list items, no "not just X but Y" or "it is not X, it is Y", no staged openers or one-line closers, none of crucial, pivotal, seamless, leverage, robust, vibrant, showcase, delve, cutting-edge, holistic, empower. Name specifics instead of adjectives, decision before reasoning, straight quotes. No placeholders: unknowns become open questions with an owner and a date.
+Writing rules: one title, sentence case headings, no emoji or horizontal rules, no em or en dashes (write ranges with "to"), no bold labels on list items, no "not just X but Y", no staged openers, and none of crucial, pivotal, seamless, leverage, robust, vibrant, showcase, delve, cutting-edge, holistic, empower. Name specifics, decision before reasoning, straight quotes. No placeholders: unknowns become open questions with an owner and a date.
 
 ## Reference map
 
