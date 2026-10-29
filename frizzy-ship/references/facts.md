@@ -1,0 +1,29 @@
+# Verified facts (reuse rules inside)
+
+Purpose: lean mode skips searches for facts verified recently. Every row has the date it was checked, which is the date to write in the PRD ("checked 2026-10-24"), never today's date.
+
+Reuse rules
+- Stable rows (standards, fees, rules) may be reused for 60 days after the checked date without searching. After that, re-verify with one search and update this file.
+- Volatile rows (prices, free-tier limits) must be re-verified by search whenever the service is actually chosen for the PRD, unless it was checked within the last 14 days.
+- Rows marked "unverified" must be searched or labeled as unverified in the PRD.
+- A project that touches a region, store, or tool not listed here needs its own search.
+- Source names are for the PRD's research appendix. Paraphrase, never quote.
+
+## Stores and platforms (stable, except where marked)
+
+| Topic | Fact | Checked | Source |
+|---|---|---|---|
+| Chrome Web Store | 5 USD one-time registration. Privacy tab: single purpose, permission justifications, remote code answer, privacy policy URL. Manifest V3 bans remotely hosted code. Staged rollouts exist. No downgrade: publish a higher version number. Review typically 1 to 3 days per a third-party guide, so plan for up to 2 weeks on a first submission. EU trader status question unverified. | 2026-10-24 | blog.chromium.org, rxliuli.com, openskillindex.com |
+| Google Play | 25 USD one-time. Personal accounts created after 13 November 2023 need a closed test with at least 12 testers opted in for 14 continuous days before production access. | 2026-10-24 | support.google.com/googleplay/android-developer |
+| Apple | Developer Program 99 USD a year | 2026-10-24 | Vendor page seen in a pricing roundup |
+| Steam | 100 USD per game, recouped after 1,000 USD in revenue. Revenue share 30%, 25% above 10 million USD, 20% above 50 million USD. Demos need no extra fee. | 2026-10-24 | presskit.gg, fungies.io |
+| itch.io | Seller sets revenue share, default 10%. Payment fees 2.9% plus 0.30 USD. HTML5 limits: 500 MB extracted, 200 MB per file, 1,000 files. No on-the-fly compression. | 2026-10-24 | summerengine.com, fungies.io |
+
+## Tools and libraries
+
+| Topic | Fact | Checked | Source |
+|---|---|---|---|
+| ponytail | MIT. A reuse-first prompt for coding agents: check whether it needs to exist, whether the codebase, standard library, platform, or an installed dependency already does it, then write the minimum plus one small test for logic. Commands: `/ponytail` with a level of lite, full, ultra, or off, `/ponytail-review`, `/ponytail-audit`, `/ponytail-debt`, `/ponytail-gain`. Claude Code install: `/plugin marketplace add DietrichGebert/ponytail` then `/plugin install ponytail@ponytail`; other agents copy its `AGENTS.md`. Official sources only (GitHub DietrichGebert/ponytail, npm @dietrichgebert/ponytail). The authors' own benchmark (39 tasks in Claude Code) reports 53% less code, 45% fewer tokens, and 98% of risky logic shipping with a test against 68% without. The optional band and board (Claude Code 2.1.290 or newer) keep data locally in `~/.config/ponytail/`. | 2026-10-25 | github.com/DietrichGebert/ponytail |
+| caveman | Apache-2.0. Cuts what the agent says and reads. Skill-only install: `npx skills add JuliusBrussee/caveman -g`. Full CLI: `npx @caveman-ai/cli@latest` (Node.js 22.13 or newer). The voice rules cost about 1,160 input tokens. The authors report the voice adds little over "answer concisely" (3% at the median, 35% for the ultra mode, measured on older rules), that shrinking logs, JSON, and CSV cut session input tokens 33.2% over 54 runs, and cite JetBrains measuring no quality loss with 8.5% fewer output tokens on 86 tasks. It never rewrites the user's prompts because Adobe's research found that hurts answers. The CLI sends usage statistics by default (off with `caveman telemetry off` or `DO_NOT_TRACK=1`). Its Auto routing needs a free account and sends asks to its cloud. | 2026-10-25 | github.com/JuliusBrussee/caveman |
+| superpowers | MIT. A methodology as skills: brainstorming, git worktrees, writing-plans (2 to 5 minute tasks), subagent-driven-development (most thorough) or executing-plans (cheapest), test-driven-development (red, green, refactor), requesting-code-review, finishing-a-development-branch. Skills trigger automatically. Claude Code install: `/plugin install superpowers@claude-plugins-official`. The optional visual companion loads a logo carrying the version from the authors' site, disabled with `SUPERPOWERS_DISABLE_TELEMETRY`. | 2026-10-25 | github.com/obra/superpowers |
+| graphify | Apache-2.0 and MIT. Turns a codebase, docs, SQL schemas, configs, and PDFs into a queryable knowledge graph (`graph.json`, `GRAPH_REPORT.md`, `graph.html`). Code is parsed locally with tree-sitter and no model; docs, PDFs, and images use a model. Python 3.10 or newer. Install `uv tool install graphifyy` (double y; other graphify packages are unaffiliated), then `graphify install`, then `/graphify .`. Commands: `graphify query`, `graphify path`, `graphify explain`. Use `--code-only` on mixed repos. No telemetry, and a local query log at `~/.cache/graphify-queries.log` (off with `GRAPHIFY_QUERY_LOG_DISABLE=1`). Graphify Cloud is paid and its 80% token saving is the vendor's claim. | 2026-10-25 | github.com/Graphify-Labs/graphify |
